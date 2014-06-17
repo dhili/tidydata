@@ -25,9 +25,8 @@
 		* Statistics
 		* Axis
 		* Subject
-		* Signal
+		* Mean value
 	* Following diagram depicts how single column in raw data set mapped to multiple columns in tidy dataset:
 	
 	<img src="https://raw.githubusercontent.com/dhili/tidydata/master/Tidydata.jpg" />
-	* Finally tidy data set melted by "Signal" to compute mean
 	* For more details around tidy data set please refer CodeBook.md file.
