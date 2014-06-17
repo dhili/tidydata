@@ -3,7 +3,8 @@
 1.	**Constructing raw data**
 	* Raw data spread across multiple files. 
 	* This process consolidates data from multiple files into single data set.
-	* Following diagram depicts consolidated raw data structure:
+	* Following diagram depicts how data from multiple files are consolidated into single data set:
+	
 	<img src="https://raw.githubusercontent.com/dhili/tidydata/master/rawdata.jpg" />
 	* Read all features from features.txt file, filter by mean and standard deviation and set as column labels in raw data set. **NOTE:** Analysis considered only mean & standard deviation columns [exact match] and excluded rest.
 	* Read train[X_train.txt] and test[X_test.txt] data, add to raw data set as data elements.
