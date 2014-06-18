@@ -1,4 +1,4 @@
-###There are two steps involed in this analysis:
+###There are two steps involved in this analysis:
 
 1.	**Constructing raw data**
 	* Raw data spread across multiple files. 
@@ -12,8 +12,8 @@
 	* Read train [subject_train.txt] and test [subject_test.txt] subject data, set column label as "subject", add to raw data set.
 	* Merge activity labels [activity_labels.txt] with raw data set, to get activity labels.
 
-2.	**Transforming raw data to tidy data** 
-	* Raw data consists multiple variable data in a single variable, hence each variable in raw data is split into multiple variables in tidy data. 
+2.	**Transforming raw data into tidy data** 
+	* Raw data of consists multiple variable data in a single variable, hence each variable in raw data is split into multiple variables. 
 	* Here are the principles that are followed while transforming raw data into tidy data:
 		* Each variable is a column
 		* each observation is a row
@@ -29,4 +29,9 @@
 	* Following diagram depicts how single column in raw data set mapped to multiple columns in tidy dataset:
 	
 	<img src="https://raw.githubusercontent.com/dhili/tidydata/master/Tidydata.jpg" />
+	
+	* Below grid depicts how columns from raw data split into multiple columns in tidy data set:
+	
+	<img src="https://raw.githubusercontent.com/dhili/tidydata/master/Tidydata.jpg" />
+	
 	* For more details around tidy data set please refer CodeBook.md file.

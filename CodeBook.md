@@ -46,7 +46,7 @@
 7.	Subject.  This is the same as the original data set with one exception.  Since one requirement was to generate the average of each activity with all subjects, for those entries the value for subject was "All".
 	* <b> Data Type </b> – Integer
 
-8.	Mean Value. This an average of the original set per the project instructions.
+8.	Mean value. This an average of the original set per the project instructions.
 	* <b> Data Type </b> – Numeric
 
 <b> NOTE: </b> Please refer readme.md file for additional information how this data structure has been constructed/transformed.

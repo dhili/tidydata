@@ -2,18 +2,23 @@ getTidyData <- function(){
 	
 	require(reshape2)
 	
+	# Raw data spread across multiple files. 
+	# This process consolidates data from multiple files into single data set.
 	rawdata <- getRawData()
 	
+	# Raw data consists multiple variable data in a single variable, 
+	# This process split single variable into multiple variables and stores in a data frame 
 	tidyData <- transformData(rawdata)
-	
+
+	# Melting & casting data by value to compute mean
 	meltedData <- melt(tidyData, c("Activity", "Subject", "Domain", "AccelerationType", "Motion", "Statistics", "Axis"), "var")
 	meltedData$value <- as.numeric(meltedData$value)
-	
 	castedData <- dcast(meltedData, Activity + Domain + AccelerationType + Motion + Statistics + Axis + Subject ~ variable, mean, margins="Subject")
-	colnames(castedData)[colnames(castedData) == "var"] <- "Average Value"
+	colnames(castedData)[colnames(castedData) == "var"] <- "Mean value"
 	castedData
 }
 
+# This is helper method to populate tidy data set, called by transformData method
 reshapeData <- function(Subject, Activity, AccType, Device, Domain, Stats, Axis, Motion, var){
 	
 	tidyData <- data.frame(Subject= integer(),
@@ -47,6 +52,8 @@ reshapeData <- function(Subject, Activity, AccType, Device, Domain, Stats, Axis,
 	tidyData
 }
 
+# Raw data consists multiple variable data in a single variable, 
+# This method split single variable into multiple variables and stores in a data frame called tidyData
 transformData <- function(rawdata) {
 
 	tidyData <- data.frame(Subject= integer(),
