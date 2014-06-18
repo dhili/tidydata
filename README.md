@@ -32,6 +32,6 @@
 	
 	* Below grid depicts how columns from raw data split into multiple columns in tidy data set:
 	
-	<img src="https://raw.githubusercontent.com/dhili/tidydata/master/Tidydata.jpg" />
+	<img src="https://raw.githubusercontent.com/dhili/tidydata/master/Rawdata%20to%20Tidydata.jpg" />
 	
 	* For more details around tidy data set please refer CodeBook.md file.
